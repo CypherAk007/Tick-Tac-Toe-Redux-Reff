@@ -1,10 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+:root{
+  --color-primary-light:rgba(241, 210, 70, 0.98);
+  --color-primary-dark:rgba(250, 176, 103, 0.87);
+  --color-silver:#c0c0c0;
+  --color-matt-black:#28282B;
+}
+html{
+  font-family: 'Roboto Slab', sans-serif;
+  line-height:1.7;
+  color: #ebe7ef;
+
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
+  background: radial-gradient(
+    circle at top,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  ),url('./assets/bg-pattern-dark.png');
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* min-height: 110rem; */
+  background-size: 100% 100%, 30% 30%, 100% 100%;
+  background-repeat: repeat;
 }
 
 code {

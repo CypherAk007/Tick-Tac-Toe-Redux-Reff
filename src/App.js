@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Logic from "./logic/Logic";
+import classes from './App.module.scss'
+import GameBox from "./components/GameBox";
+const App = ()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.app}>
+      <h1>Tic-Tac-Toe</h1>
+      <Logic></Logic>
+      <GameBox></GameBox>
     </div>
-  );
+  )
 }
 
 export default App;

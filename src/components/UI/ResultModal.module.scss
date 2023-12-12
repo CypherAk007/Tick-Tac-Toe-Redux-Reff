@@ -1,0 +1,55 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+  }
+//   .backdrop{
+//     // position: absolute;
+//     // top:50%;
+//     // left:50%;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     height: inherit;
+//     z-index: 10;
+//     background: rgba(0,0,0,.75);
+
+// }
+
+.result-modal[open]{
+  border:none;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color:#d7fcf8;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 25rem;
+  width:25rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  // text-align: center;
+  margin: 48rem auto;
+  // position: absolute;
+  & button{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-matt-black);
+    height: 4rem;
+    width: 7rem;
+    margin: 2rem;
+    border-radius: 1rem;
+
+  }
+  & h2{
+    font-size: 2rem;
+  }
+}
+
